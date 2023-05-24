@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+
+    <title>StarNotary DAPP</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <style>
+      body {
+        padding: 30px;
+      }
+    </style>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+      integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" type="module"></script>
+  </head>
+  <body>
+    <div>
+      <h1><i class="fab fa-ethereum"></i> StarNotary Token DAPP</h1>
+      <hr />
+
+      <h1>Create a Star</h1>
+      <div class="form-group">
+        <label for="starName"></label>
+        <input
+          type="text"
+          class="form-control"
+          name="starName"
+          id="starName"
+          aria-describedby="helpId"
+          placeholder="Star Name"
+        />
+        <small id="helpId" class="form-text text-muted">Star Name</small>
+      </div>
+
+      <div class="form-group">
+        <label for="starId"></label>
+        <input
+          type="text"
+          class="form-control"
+          name="starId"
+          id="starId"
+          aria-describedby="helpId"
+          placeholder="Token ID"
+        />
+        <small id="helpId" class="form-text text-muted">Star Id</small>
+      </div>
+
+      <button type="button" class="btn btn-primary" id="createStarButton">
+        Create Star
+      </button>
+
+      <hr />
+      <div class="alert alert-primary" role="alert" id="status"></div>
+    </div>
+  </body>
+</html>
